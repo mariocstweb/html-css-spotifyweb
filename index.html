@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,41 +29,56 @@
         <div class="sidebar">
           <div class="sidebar-top">
             <span class="side-flex">
-              <img src="./img/logo-small.svg" alt="" class="mb-20 user" />
+              <img src="./img/logo-small.svg" alt="" class="mb-20 minilogo" />
               <img src="./img/logo.svg" alt="" class="sidebar-none mb-20" />
             </span>
             <div class="side-flex">
-              <img src="./img/home.svg" alt="" class="mb-10 icon-height" />
+              <img
+                src="./img/home.svg"
+                alt=""
+                class="mb-10 icon-height m-rt-10"
+              />
               <p class="sidebar-none">Home</p>
             </div>
             <div class="side-flex">
-              <img src="./img/search.svg" alt="" class="mb-10 icon-height" />
+              <img
+                src="./img/search.svg"
+                alt=""
+                class="mb-10 icon-height m-rt-10"
+              />
               <p class="sidebar-none">Cerca</p>
             </div>
             <div class="side-flex">
-              <img src="./img/libreria.svg" alt="" class="mb-10 icon-height" />
+              <img
+                src="./img/libreria.svg"
+                alt=""
+                class="mb-10 icon-height m-rt-10"
+              />
+              <p class="sidebar-none">La tua libreria</p>
             </div>
-            <p class="sidebar-none">La tua libreria</p>
           </div>
           <div class="sidebar-mid sidebar-none">
-            <h5>Playlist</h5>
-            <span> <i class="fa-solid fa-square-plus"></i> Crea Playlist </span>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
-            <p class="mb-30">Nome Playlist</p>
+            <h4 class="mb-30 mt-20 clr-wht">Playlist</h4>
+            <span
+              ><i class="fa-solid fa-square-plus fa-2xl m-rt-10"></i> Crea
+              Playlist
+            </span>
+            <p class="mb-20 mt-30">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
+            <p class="mb-20">Nome Playlist</p>
           </div>
           <div class="sidebar-bottom">
-            <div class="side-flex">
-              <img src="./img/download.svg" alt="" class="download" />
+            <div class="side-flex mb-10">
+              <img src="./img/download.svg" alt="" class="download m-rt-20" />
               <p class="sidebar-none clr-gry">Installa app</p>
             </div>
-            <div></div>
+            <div class="divisor"></div>
             <div class="side-flex">
-              <img src="./img/profile.svg" alt="" class="user" />
+              <img src="./img/profile.svg" alt="" class="user mt-10 m-rt-20" />
               <p class="sidebar-none clr-wht">John Doe</p>
             </div>
           </div>
@@ -202,12 +225,49 @@
       <footer>
         <div class="footer-content">
           <div class="footer-left">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="f-img">
+              <img src="./img/sinister.jpeg" alt="" class="img-footer" />
+            </div>
+            <div class="f-song">
+              <h5 class="clr-wht">Sinister</h5>
+              <p class="clr-gry">Brano Nome</p>
+            </div>
+            <div class="f-favourite">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-folder"></i>
+            </div>
           </div>
-          <div class="footer-mid"></div>
-          <div class="footer-right"></div>
+          <div class="footer-mid container">
+            <div class="mid-top mb-20">
+              <i class="fa-solid fa-shuffle"></i>
+              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-regular fa-circle-play fa-xl"></i>
+              <i class="fa-solid fa-forward-step"></i>
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+            <div class="mid-bottom">
+              <div class="player">
+                <span class="clr-gry">0:25</span>
+                <div class="progress-bar">
+                  <div class="current-progress"></div>
+                </div>
+                <span class="clr-gry">4:35</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="icon-container">
+              <i class="fa-solid fa-list-ul"></i>
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+
+            <!-- <div class="player-right">
+              <div class="progress-bar-right">
+                <div class="current-progress-right"></div>
+              </div> -->
+            </div>
+          </div>
         </div>
       </footer>
     </div>

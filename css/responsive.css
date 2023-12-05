@@ -1,0 +1,45 @@
+@media screen and (min-width: 639px) {
+  .sidebar {
+    flex-basis: 500px;
+    padding: 20px;
+  }
+
+  .minilogo {
+    display: none;
+  }
+
+  .sidebar-none {
+    display: inline;
+    color: lightgrey;
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .side-flex {
+    justify-content: flex-start;
+  }
+
+  .divisor {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 878px) {
+  .col {
+    flex-basis: 25%;
+  }
+
+  .col-foryou {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .col {
+    flex-basis: calc(100% / 6);
+  }
+
+  .col-foryou {
+    flex-basis: calc(100% / 6);
+  }
+}
