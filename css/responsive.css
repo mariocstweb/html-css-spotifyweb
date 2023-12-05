@@ -1,6 +1,6 @@
 @media screen and (min-width: 639px) {
   .sidebar {
-    flex-basis: 500px;
+    flex-basis: 350px;
     padding: 20px;
   }
 
