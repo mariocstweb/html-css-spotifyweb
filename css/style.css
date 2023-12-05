@@ -109,6 +109,16 @@ img {
 }
 /* SIDEBAR */
 
+.sidebar-mid p:hover,
+.sidebar-mid span:hover {
+  color: white;
+}
+
+.sidebar-mid p:hover,
+.sidebar-mid span:hover {
+  color: white;
+}
+
 .side-flex {
   display: flex;
   justify-content: center;
@@ -177,14 +187,14 @@ img {
 .main-content {
   flex-grow: 1;
   overflow: auto;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 /* Navbar-Top */
 
 .navbar-top {
   min-height: 100px;
-  background-color: #080b12;
+  background-color: #080b12e9;
   position: sticky;
   top: 0;
   left: 0;
@@ -230,6 +240,11 @@ main {
   color: lightgrey;
   font-weight: bolder;
 }
+
+ul li a:hover {
+  color: white;
+}
+
 h2 {
   color: white;
 }
@@ -245,15 +260,37 @@ h2 {
 }
 
 .col {
-  border: 1px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
   flex-basis: 50%;
   padding: 0 1rem;
 }
 
 .card {
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
   min-height: 100px;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.card .img-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.card:hover .img-player {
+  color: white;
+  opacity: 1;
+}
+
+.card img:hover {
+  filter: brightness(80%);
+}
+
+.fa-circle-play {
+  font-size: 3rem;
 }
 
 h4 {
@@ -279,17 +316,34 @@ h4 {
 }
 
 .col-foryou {
-  border: 1px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
   flex-basis: 50%;
   padding: 0 1rem;
 }
 
 .card-foryou {
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
   min-height: 100px;
   margin-bottom: 10px;
+  position: relative;
 }
 
+.card-foryou img:hover {
+  filter: brightness(80%);
+}
+
+.card-foryou .img-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.card-foryou:hover .img-player {
+  color: white;
+  opacity: 1;
+}
 /* ----------------------- */
 
 /* Footer */
@@ -387,9 +441,17 @@ footer {
   margin: 0 20px;
 }
 
+.progress-bar:hover {
+  background-color: greenyellow;
+}
+
+.circle-scale:hover {
+  transform: scale(1.3);
+}
+
 .current-progress {
   height: 5px;
-  /* background-color: white; */
+  background-color: white;
   width: 50px;
   border-radius: 20px;
 }
@@ -425,9 +487,9 @@ footer {
   width: 10px;
   border-radius: 20px;
 }
-/* .icon-container {
+.icon-container {
   margin: 0 10px;
 }
 .icon-container .fa-solid {
   margin: 0 10px;
-} */
+}
