@@ -1,6 +1,6 @@
 @media screen and (min-width: 639px) {
   .sidebar {
-    flex-basis: 350px;
+    flex-basis: 150px;
     padding: 20px;
   }
 
@@ -9,7 +9,7 @@
   }
 
   .sidebar-none {
-    display: inline;
+    display: inline-block;
     color: lightgrey;
     font-size: 10px;
     font-weight: bolder;
